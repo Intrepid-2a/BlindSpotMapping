@@ -105,7 +105,10 @@ for hemifield in ['left', 'right']:
         point = visual.Circle(cfg['hw']['win'], size = [1,1], pos = [7,-1], fillColor=col_right, lineColor = None, units='deg')
 
     print(point.size)
+    
 
+    cfg['hw']['fusion']['hi'].resetProperties()
+    cfg['hw']['fusion']['lo'].resetProperties()
 
 
     # make a new file for the participant:
@@ -151,6 +154,9 @@ for hemifield in ['left', 'right']:
             if pyg_keyboard[key.S]:
                 point.size = [point.size[0], max(step, point.size[1] - step)]
 
+        # if anything, fusion patterns should be below other stimuli:
+        cfg['hw']['fusion']['hi'].draw()
+        cfg['hw']['fusion']['lo'].draw()
         fixation.draw()
         point.draw()
         cfg['hw']['win'].flip()
