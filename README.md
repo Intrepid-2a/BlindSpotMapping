@@ -8,7 +8,7 @@ Use Q-W to in/decrease the height.
 
 Use A-S to in/decrease the width.
 
-The procedure starts with the left eye (green marker), and then does the right eye (red marker).
+The procedure starts with the left eye (red marker). When you are satisfied that the marker can not be any bigger and remain invisble, press SPACE. It then does the right eye (green marker), which is also finished by pressing SPACE.
 
-It stores both the left and right eye blind spots in `../data/mapping/` in a file for each eye called: `{participant}_{RH|LH}_blindspot_{#}.txt` filling in participant ID, hemisphere and the number of times the mapping procedure has been done. It also stores screenshots of the final stimuli as png's but otherwise the same file name.
+It stores both the left and right eye blind spots in `../data/mapping/` in a file for each eye/hemisphere called: `{participant}_{RH|LH}_blindspot_{#}.txt` filling in participant ID, hemisphere and the number of times the mapping procedure has been done. It also stores screenshots of the final stimuli as png's but otherwise the same file name.
 
