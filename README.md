@@ -1,3 +1,5 @@
+**warning:** _deprecated code_ (will be deleted)
+
 # Blind Spot Mapping
 
 A short PsychoPy task where a marker is moved and resized until it can just _not_ be seen by one eye: when it is in the blind spot of that eye. This should be done _after_ color calibration (different repository in Intrepid-2a) since this task assumes the participant is wearing red-blue glasses and needs to read the calibrated colors for the participant such that the marker can be made invisible to the contralateral eye to begin with.
